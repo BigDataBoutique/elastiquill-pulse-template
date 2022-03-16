@@ -1,1 +1,0 @@
-# elastiquill-pulse-template
