@@ -1,0 +1,24 @@
+{{#if sidebarWidgetData.allTags}}
+<div class="topics">
+  <h1>Topics</h1>
+  <div class="topics-badges my-3">
+    {{#each sidebarWidgetData.allTags}}
+      <a href="{{this.url}}" class="tag">
+        <div class="tags-badge badge my-2">{{this.key}} ({{this.doc_count}})</div>
+      </a>
+    {{/each}}
+  </div>
+</div>
+{{/if}}
+{{#if sidebarWidgetData.allSeries}}
+<div class="series">
+  <h1>Series</h1>
+  <div class="series-badges my-3">
+    {{#each sidebarWidgetData.allSeries}}
+      <a href="{{this.url}}" class="tag">
+        <div class="series-badge badge my-2">{{this.key}} ({{this.doc_count}})</div>
+      </a>
+    {{/each}}
+  </div>
+</div>
+{{/if}}

@@ -1,0 +1,21 @@
+<form id="elastiquill-search-bar" action="{{blogRoutePrefix}}/search" method="GET">
+  <input style="display: none" type="text" name='q' placeholder="Search">
+	<button type="button"><i class="fas fa-search"></i></button>
+</form>
+<script type="text/javascript">
+$(function() {
+
+	$("#elastiquill-search-bar>button").click(function() {
+		$("#elastiquill-search-bar>button").hide();
+		$("#elastiquill-search-bar>input").show().focus();
+	});
+
+	$(document).click(function(event) {
+		if ($(event.target).closest('#elastiquill-search-bar').length) {
+			return;
+		}
+		$("#elastiquill-search-bar>button").show();
+		$("#elastiquill-search-bar>input").hide();
+	});	
+});
+</script>

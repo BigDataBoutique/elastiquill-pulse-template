@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <main class="col-md-9">
+      <div style="margin-top: 4rem">
+        <h1>Search for "{{searchQuery}}"</h1> 
+      </div>
+      {{#each posts}}
+      {{> post this}}
+      {{/each}}
+      <div style="margin-top: 4rem">
+        <p style="text-align: center">
+          Showing {{posts.length}} posts out of {{total}} total, page {{pageNum}}
+        </p>
+        <p style="text-align: center">
+          {{#if prevPage}}<a href="{{blogRoutePrefix}}/search/page/{{prevPage}}?q={{searchQuery}}">Previous page</a>{{/if}}
+          {{#if nextPage}}<a href="{{blogRoutePrefix}}/search/page/{{nextPage}}?q={{searchQuery}}">Next page</a>{{/if}}
+        </p>      
+      </div>
+    </main>
+    <aside class="col-md-3 sidebar">
+      {{> sidebar}}
+    </aside>
+  </div>
+</div>
