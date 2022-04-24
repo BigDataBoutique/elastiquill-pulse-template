@@ -1,7 +1,27 @@
-<div class="btn-toolbar blog-pagination my-5 justify-content-center">
-  {{#if prevPage}}<a class="btn btn-outline-secondary mr-2" href="{{blogRoutePrefix}}{{pathPrefix}}/page/{{prevPage}}{{pathPostfix}}">Previous page</a>{{/if}}
-  <div class="input-group align-content-center">
-    Page {{pageNum}} / {{totalPages}}
-  </div>
-  {{#if nextPage}}<a class="btn btn-outline-secondary ml-2" href="{{blogRoutePrefix}}{{pathPrefix}}/page/{{nextPage}}{{pathPostfix}}">Next page</a>{{/if}}
-</div>
+<article class="pagination">
+{{#if prevPage}}
+    <a class="link arrows" href="{{blogRoutePrefix}}{{pathPrefix}}/page/{{prevPage}}{{pathPostfix}}">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="1">
+                <path d="M15 8H1" stroke="#292929" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 1L1 8L8 15" stroke="#292929" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+        </svg>
+    </a>
+{{/if}}
+
+<!--    Page {{pageNum}} / {{totalPages}}-->
+<!--    <a class="link" href="">1</a>-->
+<!--    <a class="link" href="">2</a>-->
+
+{{#if nextPage}}
+    <a class="link arrows" href="{{blogRoutePrefix}}{{pathPrefix}}/page/{{nextPage}}{{pathPostfix}}">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="1">
+                <path d="M1 8H15" stroke="#292929" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 1L15 8L8 15" stroke="#292929" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+        </svg>
+    </a>
+{{/if}}
+</article>

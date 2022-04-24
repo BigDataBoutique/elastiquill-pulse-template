@@ -1,38 +1,20 @@
-<header class="container">
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="{{blogRoutePrefix}}">
-      <img src="/static/base/img/logo.svg" class="d-inline-block align-top" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav w-100 justify-content-end">
-        <li class="nav-item mx-4" style="line-height: 34px;">
-          {{> search-widget}}
-        </li>
-        <li class="nav-item mx-4" style="line-height: 34px;">
-          <a href="{{blogRoutePrefix}}/rss" target="_blank">
-            <i style="padding: 0rem 0.5rem" class="fas fa-rss"></i>
-          </a>
-        </li>
-        <li class="nav-item mx-4">
-          <a class="nav-link" href="/contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  {{#if (and posts.length (eq pageNum 1) (eq template "index"))}}
-    {{> fresh-post (head posts)}}
-  {{/if}}
-  {{#if (or (eq template "tagged") (eq template "series")) }}
-    <div class="blog-title my-5">
-      {{#if tagDescription}}
-        <h1><span>Blog /</span> {{tagDescription.title}}</h1>
-      {{else}}
-        <h1><span>Blog /</span> {{tag}}{{series}}</h1>
-      {{/if}}
-    </div>
-  {{/if}}
+<header class="header">
+    <nav class="nav">
+        <img src="https://pulse.support/assets-blog/Logo.svg" alt="">
+        <label for="hamburger">
+            <svg width="32" height="19" viewBox="0 0 32 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="1">
+                    <path d="M1 1.5H31" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1 9.5H31" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1 17.5H31" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+            </svg>
+        </label>
+        <input type="checkbox" class="hamburger">
+        <article class="nav__menu">
+            <a class="link" href="/blog">Blog</a>
+            <a class="link" href="/plans">Plans</a>
+            <a class="link" href="/contact">Contact Us</a>
+        </article>
+    </nav>
 </header>
