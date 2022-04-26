@@ -36,13 +36,13 @@
             <h2>Read Next</h2>
 
         {{#each post.more_like_this}}
-            <a href="{{this.url}}" class="post">
+            <a href="{{url}}" class="post">
                 <div class="post__container">
                     <div class="post__container__text-wrapper">
-                        <h2>{{this.title}}</h2>
-                        <p>{{{this.excerpt}}}</p>
+                        <h2>{{title}}</h2>
+                        <p>{{{excerpt}}}</p>
                     </div>
-                    <img src="{{this.metadata.header_image_url}}" alt="">
+                    <img src="{{metadata.header_image_url}}" alt="">
                 </div>
             </a>
         {{/each}}
