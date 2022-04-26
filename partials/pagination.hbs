@@ -1,4 +1,4 @@
-<article class="pagination">
+<div class="pagination">
 {{#if prevPage}}
     <a class="link arrows" href="{{blogRoutePrefix}}{{pathPrefix}}/page/{{prevPage}}{{pathPostfix}}">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -11,7 +11,7 @@
 {{/if}}
 
 <!--    Page {{pageNum}} / {{totalPages}}-->
-<!--    <a class="link" href="">1</a>-->
+<a class="link pageNumber" href="{{blogRoutePrefix}}{{pathPrefix}}/page/1{{pathPostfix}}">1</a>
 <!--    <a class="link" href="">2</a>-->
 
 {{#if nextPage}}
@@ -24,4 +24,4 @@
         </svg>
     </a>
 {{/if}}
-</article>
+</div>
