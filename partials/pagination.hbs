@@ -8,13 +8,16 @@
             </g>
         </svg>
     </a>
+    {{#unless (eq prevPage 1)}}
+    <a class="link pageNumber activePageLink" href="{{blogRoutePrefix}}{{pathPrefix}}/page/1{{pathPostfix}}">1</a>
+    {{/unless}}
+    <a class="link pageNumber" href="{{blogRoutePrefix}}{{pathPrefix}}/page/{{prevPage}}{{pathPostfix}}">{{prevPage}}</a>
 {{/if}}
 
-<!--    Page {{pageNum}} / {{totalPages}}-->
-<a class="link pageNumber" href="{{blogRoutePrefix}}{{pathPrefix}}/page/1{{pathPostfix}}">1</a>
-<!--    <a class="link" href="">2</a>-->
+<a class="link pageNumber activePageLink" href="{{blogRoutePrefix}}{{pathPrefix}}/page/{{pageNum}}{{pathPostfix}}">{{pageNum}}</a>
 
 {{#if nextPage}}
+    <a class="link pageNumber" href="{{blogRoutePrefix}}{{pathPrefix}}/page/{{nextPage}}{{pathPostfix}}">{{nextPage}}</a>
     <a class="link arrows" href="{{blogRoutePrefix}}{{pathPrefix}}/page/{{nextPage}}{{pathPostfix}}">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="1">
