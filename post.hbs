@@ -8,15 +8,12 @@
                         <h2>{{post.title}}</h2>
                     </div>
                     <div class="page-hero__text-container__tag-wrapper">
-                        {{# if post.series}}
+                        {{#if post.series}}
                             <a href="{{post.series_url}}">Series: {{post.series}}</a>
                         {{/if}}
-                        {{#each post.tags}}
-                        <a href="{{this.url}}">{{this.key}}</a>
-                        {{/each}}
                     </div>
                 </div>
-                <img src="{{{post.metadata.header_image_url}}}" alt=""><!-- {{post.published_at_str}} -->
+                <img src="{{{post.metadata.header_image_url}}}" alt="">
             </div>
         </article>
     </section>
@@ -27,17 +24,6 @@
             <div class="blog-page__body__text-content">
                 {{{post.content}}}
             </div>
-
-            {{> sidebar}}
         </article>
     </section>
 </main>
-
-<script>
-$(function() {
-  $('.post-content').find('img').each(function() {
-    var href = $(this).attr('src');
-    $(this).replaceWith($('<a data-fancybox="gallery" href="' + href + '"><img src="' + href + '"></a>'));
-  });
-});
-</script>
