@@ -3,12 +3,16 @@
         <div class="blog-page__body__sidebar__social-wrapper">
             <p>Share</p>
             <a href="https://facebook.com/sharer/sharer.php?u={{encodeURI post.full_url}}" class="link social-link" target="_blank" rel="noopener">
+            <img src="/blog/static/theme/Facebook.svg" alt="Share on Facebook">
             </a>
             <a href="https://twitter.com/intent/tweet/?text={{encodeURI post.title}}&amp;url={{encodeURI post.full_url}}" target="_blank" rel="noopener" class="link social-link">
+            <img src="/blog/static/theme/Twitter.svg" alt="Share on Facebook">
             </a>
             <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{encodeURI post.full_url}}&amp;title={{encodeURI post.title}}&amp;summary={{encodeURI post.title}}&amp;source={{encodeURI blogUrl}}" target="_blank" rel="noopener" class="link social-link">
+            <img src="/blog/static/theme/LinkedIn.svg" alt="Share on Facebook">
             </a>
             <a href="" class="link social-link">
+            <img src="/blog/static/theme/Link.svg" alt="Share on Facebook">
             </a>
         </div>
 
@@ -17,11 +21,12 @@
         </button>
     </div>
 
-    <div class="blog-page__body__sidebar__cta-wrapper">
+    <a href="https://pulse.support/get-started" class="blog-page__body__sidebar__cta-wrapper">
         <h3>Production Support & Operations Intelligence for Elasticsearch</h3>
-        <img src="/blog/static/theme/CTA-Image.svg" alt="">
+        <img class="cta-image" src="/blog/static/theme/CTA-Image.svg" alt="">
         <button class="button-primary button-primary--solid">
             Get Started Now
         </button>
-    </div>
+        <img class="inverted-left-dots" src="./Assets/InvertedLeftDots.svg" alt="">
+    </a>
 </aside>
