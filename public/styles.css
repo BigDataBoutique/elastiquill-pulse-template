@@ -152,7 +152,7 @@
       flex-basis: auto;
 }
 
-.posts .pagination {
+.pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,11 +164,11 @@
       align-self: center;
 }
 
-.posts .pagination .arrows:hover {
+.pagination .arrows:hover {
   opacity: 1;
 }
 
-.posts .pagination a {
+.pagination a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,29 +184,29 @@
   margin-right: 7px;
 }
 
-.posts .pagination a.activePageLink {
+.pagination a.activePageLink {
   color: #8141DD;
   opacity: 1;
   outline: #8141DD 1px solid;
 }
 
-.posts .pagination a.activePageLink svg {
+.pagination a.activePageLink svg {
   stroke: #8141DD;
 }
 
-.posts .pagination a.activePageLink svg path {
+.pagination a.activePageLink svg path {
   stroke: #8141DD;
 }
 
-.posts .pagination a:hover {
+.pagination a:hover {
   outline: #8141DD 1px solid;
 }
 
-.posts .pagination a:hover svg {
+.pagination a:hover svg {
   stroke: #8141DD;
 }
 
-.posts .pagination a:hover svg path {
+.pagination a:hover svg path {
   stroke: #8141DD;
 }
 
@@ -862,7 +862,7 @@
     margin: 0 auto;
     display: block;
   }
-  .posts .pagination a {
+  .pagination a {
     width: 35px;
     height: 35px;
     font-size: 16px;
@@ -990,7 +990,7 @@ a {
   margin-right: 10px;
 }
 
-.button-rss:hover {
+.button-rss:hover, .button-primary:hover {
   background: radial-gradient(100% 456.49% at 100% -15.45%, #5C59EB 0%, #783EC9 55.45%, #521FBF 100%);
   color: #fff;
 }
