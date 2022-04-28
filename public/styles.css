@@ -162,6 +162,7 @@
   padding-bottom: 120px;
   -ms-flex-item-align: center;
       align-self: center;
+      justify-content: center;
 }
 
 .pagination .arrows:hover {
@@ -437,6 +438,14 @@
 
 .blog-page__body__sidebar__social-wrapper .social-link:hover svg rect {
   fill: #8141DD;
+}
+
+.social-link img {
+  transition: scale 0.2s ease-in-out;
+}
+
+.social-link img:hover {
+  scale: 1.24;
 }
 
 .blog-page__body__sidebar__cta-wrapper {
