@@ -440,6 +440,14 @@
   fill: #8141DD;
 }
 
+.social-link img {
+  transition: scale 0.2s ease-in-out;
+}
+
+.social-link img:hover {
+  scale: 1.24;
+}
+
 .blog-page__body__sidebar__cta-wrapper {
   position: relative;
   border: 1px solid #D5D8EB;
