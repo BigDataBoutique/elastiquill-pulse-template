@@ -1,0 +1,20 @@
+<div class="cards-container__card">
+    <div class="cards-container__card__img-container">
+        <a href="{{this.url}}">
+            <img src="{{{this.metadata.header_image_url}}}" alt="">
+        </a>
+    </div>
+    <div class="cards-container__card__content-container">
+        <div class="cards-container__card__content-container__time-info">
+            <p><!-- {{this.published_at_str}} --></p>
+            <p>{{this.reading_time}}</p>
+        </div>
+        <a href="{{this.url}}">
+            <h4>{{this.title}}</h4>
+        </a>
+        <div class="cards-container__card__content-container__tags-container">
+            <p>{{{this.excerpt}}}</p>
+<!--            <a href="/blog">Tag</a>-->
+        </div>
+    </div>
+</div>
