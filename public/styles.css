@@ -162,6 +162,7 @@
   padding-bottom: 120px;
   -ms-flex-item-align: center;
       align-self: center;
+      justify-content: center;
 }
 
 .posts .pagination .arrows:hover {
