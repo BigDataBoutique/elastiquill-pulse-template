@@ -209,8 +209,8 @@
 
 /* Page post style */
 .page-hero .post {
-  max-height: 360px;
   height: 360px;
+  max-height: 360px;
 }
 
 .page-hero .post:hover {
@@ -223,6 +223,8 @@
       flex-basis: 635px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  max-width: 639px;
+  max-height: 360px;
 }
 
 .page-hero .post .page-hero__text-container {
@@ -366,6 +368,10 @@
 .blog-page__body__text-content {
   -ms-flex-preferred-size: 620px;
       flex-basis: 620px;
+}
+
+.blog-page__body__text-content p.bold-text {
+  font-weight: bold;
 }
 
 .blog-page__body__text-content h3 {
@@ -949,9 +955,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   white-space: nowrap;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .button-primary svg {
