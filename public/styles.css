@@ -79,6 +79,7 @@
   position: absolute;
   top: -100px;
   right: -80px;
+  z-index: -10;
 }
 
 .posts .post-with-dots-wrapper .dots:nth-child(2) {
@@ -459,7 +460,7 @@
 }
 
 .blog-page__body__sidebar__cta-wrapper h3 {
-  padding: 30px 30px 257px;
+  padding: 30px 30px 100px;
 }
 
 .blog-page__body__sidebar__cta-wrapper .cta-image {
@@ -567,7 +568,7 @@
 
 .four-oh-four-container {
   text-align: center;
-  height: 100vh;
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -977,6 +978,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   white-space: nowrap;
+  justify-content: center;
 }
 .button-rss.main {
   width: -webkit-fit-content;
@@ -988,7 +990,7 @@ a {
   margin-right: 10px;
 }
 
-.button-primary:hover {
+.button-rss:hover {
   background: radial-gradient(100% 456.49% at 100% -15.45%, #5C59EB 0%, #783EC9 55.45%, #521FBF 100%);
   color: #fff;
 }
