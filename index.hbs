@@ -16,7 +16,6 @@
     </section>
 
     <section class="posts">
-
         {{#if (and posts.length (eq pageNum 1) (eq template "index"))}}
             {{> first-post (head posts)}}
         {{/if}}
@@ -25,19 +24,16 @@
             {{#each (tail posts)}}
                 {{> post this}}
             {{/each}}
-<!--            <p class="blog-more-posts">-->
-<!--                <a href="{{blogRoutePrefix}}/page/1">See more posts</a>-->
-<!--            </p>-->
         {{else}}
             <!-- no content -->
         {{/if}}
 
-        <a href="/" class="post">
+        <a href="/get-started" class="post">
             <div class="post__container">
                 <div class="post__container__text-wrapper">
                     <h2>Production Support & Operations Intelligence for Elasticsearch</h2>
                     <div class="post__container__text-wrapper__dots-container">
-                        <button class="button-primary button-primary--solid">Request Trial</button>
+                        <button class="button-primary button-primary--solid">Get Started Now</button>
                         <img src="/blog/static/theme/InvertedLeftDots.svg" alt="">
                     </div>
                 </div>
