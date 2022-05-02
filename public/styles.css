@@ -383,15 +383,18 @@
 }
 
 .blog-page__body__text-content ul {
-  padding-left: 64px;
+  padding-left: 40px;
+  font-size: 18px;
 }
 
 .blog-page__body__text-content ol {
-  padding-left: 64px;
+  padding-left: 40px;
+  font-size: 18px;
 }
 
 .blog-page__body__text-content li {
   margin-bottom: 16px;
+  padding-left: 10px;
 }
 
 .blog-page__body__text-content h2 {
