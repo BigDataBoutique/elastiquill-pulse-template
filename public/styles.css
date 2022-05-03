@@ -261,6 +261,13 @@
   gap: 20px;
 }
 
+.page-hero .post .page-hero__text-container h1 {
+  font-size: 40px;
+  line-height: 45px;
+  color: #262626;
+  margin-bottom: 20px;
+}
+
 .page-hero .post .page-hero__text-container__tag-wrapper a {
   padding: 6px 20px;
   white-space: nowrap;
@@ -671,6 +678,10 @@
   }
   .hero__flex-wrapper p {
     min-width: unset;
+  }
+  .page-hero .post .page-hero__text-container h1 {
+    font-size: 28px;
+    line-height: 30px;
   }
 }
 
