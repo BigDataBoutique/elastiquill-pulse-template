@@ -1,3 +1,7 @@
+main {
+  overflow-x: hidden;
+}
+
 /* Navbar */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
 .nav {
@@ -30,10 +34,12 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding-bottom: 100px;
-  overflow-x: hidden;
+  overflow-x: visible;
+  max-width: 1240px;
+  margin: 0 auto;
 }
 
 .hero__image {
@@ -46,7 +52,6 @@
 .hero__flex-wrapper {
   -ms-flex-preferred-size: 1;
       flex-basis: 1;
-  margin-left: calc(16vw + 10px);
   margin-right: 100px;
 }
 
@@ -448,10 +453,22 @@
   margin-right: 18px;
 }
 
+.blog-page__body__sidebar__social-wrapper .social-link svg {
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
 .blog-page__body__sidebar__social-wrapper .social-link {
   opacity: 1;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+}
+
+.blog-page__body__sidebar__social-wrapper .social-link:hover svg {
+  background-color: #8141DD;
+}
+
+.blog-page__body__sidebar__social-wrapper .social-link:hover svg path, .blog-page__body__sidebar__social-wrapper .social-link:hover svg circle {
+  stroke: #fff;
 }
 
 .blog-page__body__sidebar__social-wrapper .social-link:not(:last-child) {
@@ -628,12 +645,6 @@
   font-weight: 600;
   text-decoration: underline;
   color: inherit;
-}
-
-@media (max-width: 1450px) {
-  .hero__flex-wrapper {
-    margin-left: 7vw;
-  }
 }
 
 @media (max-width: 1290px) {
