@@ -128,12 +128,14 @@ main {
   border-bottom-right-radius: 10px;
   max-width: 639px;
   max-height: 280px;
+  border-left: 0.5px solid #ccc;
 }
 
 .posts .post__container .improper-svg {
   padding-top: 42px;
   padding-bottom: 26px;
   padding-right: 150px;
+  border-left: 0;
 }
 
 .posts .post__container__text-wrapper {
