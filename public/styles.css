@@ -424,6 +424,24 @@ main {
   margin: 20px 0;
 }
 
+.blog-page__body__text-content table,
+.blog-page__body__text-content th,
+.blog-page__body__text-content td,
+.blog-page__body__text-content tr,
+.blog-page__body__text-content tbody,
+.blog-page__body__text-content thead,
+.blog-page__body__text-content tfoot {
+  border-collapse: collapse;
+  border: 1px solid #8141dd;
+  padding: 5px;
+}
+
+/* add a purpleshy backgroud to th */
+.blog-page__body__text-content th {
+  background-color: #d3bbf5;
+}
+
+
 .blog-page__body__sidebar {
   -ms-flex-preferred-size: 295px;
   flex-basis: 295px;
