@@ -55,7 +55,7 @@
 
 <script>
 $(function() {
-  $('.post-content').find('img').each(function() {
+  $('.blog-page__body__text-content').find('img').each(function() {
     var href = $(this).attr('src');
     $(this).replaceWith($('<a data-fancybox="gallery" href="' + href + '"><img src="' + href + '"></a>'));
   });
