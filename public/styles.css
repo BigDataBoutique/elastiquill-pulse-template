@@ -391,6 +391,10 @@ main {
   flex-basis: 620px;
 }
 
+.blog-page__body__text-content img {
+  max-width: 100%;
+}
+
 .blog-page__body__text-content p.bold-text {
   font-weight: bold;
 }

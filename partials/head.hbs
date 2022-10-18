@@ -3,7 +3,6 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/blog/static/theme/styles.css">
 
 <title>{{#if title}}{{title}}{{else}}{{blogDescription}}{{/if}} - {{blogTitle}}</title>
 
@@ -38,6 +37,9 @@
 
 <link id="AtomLink" title="RSS" type="application/rss+xml" rel="alternate" href="{{blogRoutePrefix}}/rss">
 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.3/build/styles/default.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="/blog/static/theme/styles.css"/>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 {{> google-analytics}}
